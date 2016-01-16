@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "ToStreamable",
+  "description": "Give a right click option to make video into Streamable style video",
+  "version": "0.0.1",
+  
+
+  "icons": { 
+    "16": "icon-small.png",
+    "128": "icon-reg.png"
+  },
+
+  "browser_action": {
+      "default_icon": "icon-reg.png",
+      "default_popup": "background.html"
+    }, 
+
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },  
+
+  "permissions": [
+    "tabs",
+    "contextMenus"
+  ]
+} 
